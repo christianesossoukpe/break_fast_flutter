@@ -1,0 +1,97 @@
+name: break_fast_flutter
+description: "Un nouveau projet Flutter."
+# La ligne suivante empêche le package d'être accidentellement publié sur
+# pub.dev en utilisant `flutter pub publish`. Cela est préférable pour les packages privés.
+publish_to: 'none' # Supprimez cette ligne si vous souhaitez publier sur pub.dev
+
+# Ce qui suit définit la version et le numéro de build pour votre application.
+# Un numéro de version est composé de trois chiffres séparés par des points, comme 1.2.43,
+# suivi d'un numéro de build optionnel séparé par un +.
+# La version et le numéro de build peuvent être remplacés dans flutter
+# build en spécifiant --build-name et --build-number, respectivement.
+# Sous Android, build-name est utilisé comme versionName tandis que build-number est utilisé comme versionCode.
+# Pour en savoir plus sur la version Android, consultez https://developer.android.com/studio/publish/versioning
+# Sous iOS, build-name est utilisé comme CFBundleShortVersionString tandis que build-number est utilisé comme CFBundleVersion.
+# Pour en savoir plus sur la version iOS, consultez
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# Sous Windows, build-name est utilisé comme les parties majeure, mineure et patch
+# des versions de produit et de fichier, tandis que build-number est utilisé comme suffixe de build.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+# Les dépendances spécifient les autres packages dont votre package a besoin pour fonctionner.
+# Pour mettre à jour automatiquement les dépendances de votre package vers les dernières versions
+# envisagez d'exécuter `flutter pub upgrade --major-versions`. Alternativement,
+# les dépendances peuvent être mises à jour manuellement en modifiant les numéros de version ci-dessous
+# vers la dernière version disponible sur pub.dev. Pour voir quelles dépendances ont des versions plus récentes disponibles, exécutez `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.10+1
+
+
+
+  # Ce qui suit ajoute la police d'icônes Cupertino à votre application.
+  # Utilisez-la avec la classe CupertinoIcons pour des icônes de style iOS.
+  cupertino_icons: ^1.0.8
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+     
+
+  # Le package "flutter_lints" ci-dessous contient un ensemble de lints recommandés
+  # pour encourager les bonnes pratiques de codage. L'ensemble de lints fourni par le package est
+  # activé dans le fichier `analysis_options.yaml` situé à la racine de votre package. Voir ce fichier pour des informations sur la désactivation de règles de lint spécifiques
+  # et l'activation d'autres règles supplémentaires.
+  flutter_lints: ^4.0.0
+
+# Pour des informations sur la partie Dart générique de ce fichier, voir la
+# page suivante : https://dart.dev/tools/pub/pubspec
+
+# La section suivante est spécifique aux packages Flutter.
+flutter:
+
+  # La ligne suivante garantit que la police d'icônes Material est
+  # incluse dans votre application, afin que vous puissiez utiliser les icônes de
+  # la classe Material Icons.
+  uses-material-design: true
+
+  # Pour ajouter des ressources à votre application, ajoutez une section assets, comme ceci :
+  assets:
+    - assets/icons/
+    # - images/a_dot_ham.jpeg
+
+  # Une ressource image peut faire référence à une ou plusieurs "variantes" spécifiques à la résolution, voir
+  # https://flutter.dev/to/resolution-aware-images
+
+  # Pour plus de détails sur l'ajout de ressources à partir des dépendances de packages, consultez
+  # https://flutter.dev/to/asset-from-package
+
+  # Pour ajouter des polices personnalisées à votre application, ajoutez une section fonts ici,
+  # dans cette section "flutter". Chaque entrée de cette liste doit avoir une
+  # clé "family" avec le nom de la famille de polices, et une clé "fonts" avec une
+  # liste spécifiant la ressource et d'autres descripteurs pour la police. Par exemple :
+  fonts:
+    - family: Poppins
+      fonts:
+    
+        - asset: fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: fonts/Poppins-SemiBold.ttf
+          weight: 600
+    # - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # Pour plus de détails concernant les polices provenant des dépendances de packages,
+  # voir https://flutter.dev/to/font-from-package
